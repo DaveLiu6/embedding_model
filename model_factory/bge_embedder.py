@@ -54,7 +54,7 @@ def bge_embedding(texts: Union[str, List[str]], model_name):
     if model_name == "bge-small-zh-v1.5":
         try:
             log_info(f"开始使用{model_name}进行文本向量化......")
-            embedding_res = BGE_SMALL_ZH_MODEL.encode(contexts)
+            embedding_res = BGE_SMALL_ZH_MODEL.encode(contexts).tolist()
             log_info("文本向量化完成")
         except Exception as e:
             log_error(f"文本向量化执行出错：{str(e)}")
@@ -62,7 +62,7 @@ def bge_embedding(texts: Union[str, List[str]], model_name):
     elif model_name == "bge-small-en-v1.5":
         try:
             log_info(f"开始使用{model_name}进行文本向量化......")
-            embedding_res = BGE_SMALL_EN_MODEL.encode(contexts)
+            embedding_res = BGE_SMALL_EN_MODEL.encode(contexts).tolist()
             log_info("文本向量化完成")
         except Exception as e:
             log_error(f"文本向量化执行出错：{str(e)}")
