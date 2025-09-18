@@ -107,5 +107,5 @@ if __name__ == "__main__":
     text2 = ["今天天气真好", "你好"]
     print(bge_loader.encode_text(text1, model_name="bge-small-en-v1.5"))
     print(bge_loader.encode_text(text2, model_name="bge-small-zh-v1.5"))
-
+    print(bge_loader.encode_text(text2, model_name="qwen3-embedding-0.6b"))
 

@@ -14,6 +14,7 @@ class Settings:
     supported_models: Dict[str, str] = {
         "bge_small_zh_v1.5": "bge-small-zh-v1.5",
         "bge_small_en_v1.5": "bge-small-en-v1.5",
+        "qwen3_embedding_0.6b": "qwen3-embedding-0.6b"
     }
 
     # 性能配置

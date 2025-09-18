@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 
-from model_factory.bge_embedder import bge_loader
+from model_factory.embedder import bge_loader
 from config.logger_config import get_logger, log_error, log_info
 
 
