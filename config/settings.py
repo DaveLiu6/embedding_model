@@ -4,6 +4,7 @@ from typing import Dict, List
 
 class Settings:
     """应用配置"""
+    ROOT_PATH = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     # 模型配置
     default_model: str = "bge-small-zh-v1.5"
     max_squentence_length: int = 512
@@ -21,3 +22,5 @@ class Settings:
 
 
 settings = Settings()
+
+print(settings.ROOT_PATH)
